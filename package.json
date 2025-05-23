@@ -1,0 +1,28 @@
+{
+  "name": "jobs-ch-serp-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes job listings (SERP) from jobs.ch and outputs job URLs and summary info.",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apify": "^3.4.2",
+    "crawlee": "^3.0.0",
+    "playwright": "^1.40.0"
+  },
+  "apify": {
+    "actorSpecification": 1,
+    "name": "jobs-ch-serp-scraper",
+    "title": "Jobs.ch SERP Scraper",
+    "description": "Scrapes job listings (SERP) from jobs.ch and outputs job URLs and summary info.",
+    "version": "1.0.0",
+    "storages": {
+      "dataset": {
+        "actorSpecification": 1
+      }
+    }
+  }
+} 
