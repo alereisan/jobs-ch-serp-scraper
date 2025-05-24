@@ -7,24 +7,28 @@
             "title": "Search Keyword",
             "type": "string",
             "description": "The keyword to search for (e.g. 'Recruiter')",
+            "editor": "textfield",
             "default": "Recruiter"
         },
         "sortBy": {
             "title": "Sort By",
             "type": "string",
             "description": "How to sort the results",
+            "editor": "textfield",
             "default": "date"
         },
         "publicationDate": {
             "title": "Publication Date",
             "type": "string",
             "description": "Filter by publication date (e.g. '1' for last 24h)",
+            "editor": "textfield",
             "default": "1"
         },
         "page": {
             "title": "Start Page",
             "type": "integer",
             "description": "Starting page number",
+            "editor": "number",
             "minimum": 1,
             "default": 1
         },
@@ -32,6 +36,7 @@
             "title": "Maximum Pages",
             "type": "integer",
             "description": "Maximum number of pages to scrape",
+            "editor": "number",
             "minimum": 1,
             "maximum": 100,
             "default": 5
@@ -58,6 +63,7 @@
             "title": "Location",
             "type": "string",
             "description": "Location to filter jobs by",
+            "editor": "textfield",
             "default": ""
         },
         "categories": {
