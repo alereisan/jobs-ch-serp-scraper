@@ -34,6 +34,8 @@ const {
     categories // NEU: categories aus Input
 } = input;
 
+console.log('Input:', input);
+
 const normalize = str => str.replace(/\s+/g, ' ').trim();
 
 // Filterfunktion für relevante Titel
