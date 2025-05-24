@@ -1,0 +1,30 @@
+{
+	"actorSpecification": 1,
+	"name": "jobs-ch-serp-scraper",
+	"title": "Jobs.ch SERP Scraper",
+	"description": "Scrapes job listing pages (SERPs) from jobs.ch, with optional filtering for recruiting/HR roles. Outputs structured job data and URLs for further automation.",
+	"version": "0.1",
+	"buildTag": "latest",
+	"main": "src/main.js",
+	"minMemoryMbytes": 512,
+	"maxMemoryMbytes": 2048,
+	"authors": [
+		{
+			"name": "Santamaria Automations",
+			"email": "contact@alessandrosantamaria.com",
+			"url": "https://www.alessandrosantamaria.com"
+		}
+	],
+	"categories": [
+		"scraper",
+		"jobs",
+		"automation",
+		"recruiting"
+	],
+	"readme": "../README.md",
+	"input": "../INPUT_SCHEMA.json",
+	"usesStandbyMode": false,
+	"storages": {
+		"dataset": "../dataset_schema.json"
+	}
+}

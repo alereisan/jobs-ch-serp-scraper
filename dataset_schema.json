@@ -1,0 +1,76 @@
+{
+  "actorSpecification": 1,
+  "title": "Jobs.ch SERP Scraper Output",
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Job Title",
+        "description": "The title of the job posting"
+      },
+      "company": {
+        "type": "string",
+        "title": "Company",
+        "description": "The company offering the job"
+      },
+      "location": {
+        "type": "string",
+        "title": "Location",
+        "description": "The job location"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "title": "URL",
+        "description": "Direct link to the job posting"
+      },
+      "workload": {
+        "type": "string",
+        "title": "Workload",
+        "description": "The workload percentage or type"
+      },
+      "employmentType": {
+        "type": "string",
+        "title": "Employment Type",
+        "description": "Type of employment (full-time, part-time, etc.)"
+      },
+      "published": {
+        "type": "string",
+        "title": "Published Date",
+        "description": "When the job was published"
+      },
+      "page": {
+        "type": "integer",
+        "title": "Page Number",
+        "description": "The page number where this job was found"
+      }
+    },
+    "required": [
+      "title",
+      "company",
+      "location",
+      "url",
+      "workload",
+      "employmentType",
+      "published",
+      "page"
+    ]
+  },
+  "views": {
+    "default": {
+      "title": "Default view",
+      "fields": [
+        "title",
+        "company",
+        "location",
+        "url",
+        "workload",
+        "employmentType",
+        "published",
+        "page"
+      ],
+      "transformation": {}
+    }
+  }
+}
