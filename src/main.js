@@ -53,7 +53,8 @@ const isRelevantJob = (title) => {
             }
             return cleanTitle.includes(cleanKeyword);
         } else {
-            const pattern = new RegExp(`\\b${cleanKeyword}\\b`, 'i');
+            // Modified regex to handle special characters like colons
+            const pattern = new RegExp(`(^|\\s|:|\\(|\\)|\\/|\\-|\\+)${cleanKeyword}(\\s|:|$|\\(|\\)|\\/|\\-|\\+)`, 'i');
             return pattern.test(cleanTitle);
         }
     });
